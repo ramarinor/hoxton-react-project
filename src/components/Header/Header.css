@@ -34,7 +34,7 @@
   height: 2px;
   position: absolute;
   transition: 1s;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
 }
 .header .logo-link::after {

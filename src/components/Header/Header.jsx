@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import CustomLink from "./CustomLink/CustomLink";
 import "./Header.css";
 function Header() {
   return (
@@ -6,37 +6,37 @@ function Header() {
       <nav className="nav-bar">
         <ul className="nav-bar-list">
           <li className="nav-bar-item">
-            <Link to="/paints" className="nav-bar-link">
+            <CustomLink to="/paints" className="nav-bar-link">
               PAINTS
-            </Link>
+            </CustomLink>
           </li>
           <li className="nav-bar-item">
-            <Link to="/samples" className="nav-bar-link">
+            <CustomLink to="/samples" className="nav-bar-link">
               SAMPLES
-            </Link>
+            </CustomLink>
           </li>
         </ul>
       </nav>
-      <Link to="/" className="logo-link">
+      <CustomLink to="/" className="logo-link">
         <h1 className="logo">PALETTE</h1>
-      </Link>
+      </CustomLink>
 
       <nav className="nav-bar">
         <ul className="nav-bar-list">
           <li className="nav-bar-item">
-            <Link to="/calculator" className="nav-bar-link">
+            <CustomLink to="/calculator" className="nav-bar-link">
               CALCULATOR
-            </Link>
+            </CustomLink>
           </li>
           <li className="nav-bar-item">
-            <Link to="/Login" className="nav-bar-link">
+            <CustomLink to="/Login" className="nav-bar-link">
               LOG IN
-            </Link>
+            </CustomLink>
           </li>
           <li className="nav-bar-item">
-            <Link to="/cart" className="nav-bar-link">
+            <CustomLink to="/cart" className="nav-bar-link">
               CART (0)
-            </Link>
+            </CustomLink>
           </li>
         </ul>
       </nav>
