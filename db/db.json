@@ -3,7 +3,7 @@
     {
       "id": "kobe",
       "number": "3010",
-      "hexCode": "",
+      "hexCode": "#26393a",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -11,7 +11,7 @@
     {
       "id": "pantanal",
       "number": "2595",
-      "hexCode": "",
+      "hexCode": "#232820",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -19,7 +19,7 @@
     {
       "id": "glenveagh",
       "number": "2520",
-      "hexCode": "",
+      "hexCode": "#4b5653",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -27,7 +27,7 @@
     {
       "id": "hazel",
       "number": "0090",
-      "hexCode": "",
+      "hexCode": "#767c73",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -35,7 +35,7 @@
     {
       "id": "kigali",
       "number": "1000",
-      "hexCode": "",
+      "hexCode": "#767c73",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -43,7 +43,7 @@
     {
       "id": "greensburg",
       "number": "0085",
-      "hexCode": "",
+      "hexCode": "#91a084",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -51,7 +51,7 @@
     {
       "id": "eslamabad",
       "number": "0070",
-      "hexCode": "",
+      "hexCode": "#b5b29a",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -59,7 +59,7 @@
     {
       "id": "havasupai",
       "number": "1095",
-      "hexCode": "",
+      "hexCode": "#a14f3d",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -67,7 +67,7 @@
     {
       "id": "st-mary",
       "number": "2010",
-      "hexCode": "",
+      "hexCode": "#866463",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -75,7 +75,7 @@
     {
       "id": "granada",
       "number": "1550",
-      "hexCode": "",
+      "hexCode": "#a76d6b",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -83,7 +83,7 @@
     {
       "id": "chamarel",
       "number": "1595",
-      "hexCode": "",
+      "hexCode": "#a34549",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -91,7 +91,7 @@
     {
       "id": "navajo",
       "number": "2565",
-      "hexCode": "",
+      "hexCode": "#b54f48",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -99,7 +99,7 @@
     {
       "id": "arizona",
       "number": "0560",
-      "hexCode": "",
+      "hexCode": "#cc6d68",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -107,7 +107,7 @@
     {
       "id": "broken-hill",
       "number": "1035",
-      "hexCode": "",
+      "hexCode": "#c3c1c6",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -115,7 +115,7 @@
     {
       "id": "troutville",
       "number": "2525",
-      "hexCode": "",
+      "hexCode": "#dedbdc",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -123,7 +123,7 @@
     {
       "id": "wexford",
       "number": "0045",
-      "hexCode": "",
+      "hexCode": "#cdd0ce",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -131,7 +131,7 @@
     {
       "id": "vilnius",
       "number": "0590",
-      "hexCode": "",
+      "hexCode": "#dfc3af",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -139,7 +139,7 @@
     {
       "id": "baaja",
       "number": "1500",
-      "hexCode": "",
+      "hexCode": "#eec7a6",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -147,7 +147,7 @@
     {
       "id": "baku",
       "number": "3005",
-      "hexCode": "",
+      "hexCode": "#e6ccb3",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -155,7 +155,7 @@
     {
       "id": "ajman",
       "number": "0525",
-      "hexCode": "",
+      "hexCode": "#fbeed8",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -163,7 +163,7 @@
     {
       "id": "merzouga",
       "number": "1030",
-      "hexCode": "",
+      "hexCode": "#dccdc5",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -171,7 +171,7 @@
     {
       "id": "sidi-ali",
       "number": "3000",
-      "hexCode": "",
+      "hexCode": "#decfcb",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -179,7 +179,7 @@
     {
       "id": "ricasoli",
       "number": "0550",
-      "hexCode": "",
+      "hexCode": "#d3aaa9",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -187,7 +187,7 @@
     {
       "id": "monte-castello",
       "number": "1525",
-      "hexCode": "",
+      "hexCode": "#f8eabf",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -195,7 +195,7 @@
     {
       "id": "burano",
       "number": "2575",
-      "hexCode": "",
+      "hexCode": "#f3ca59",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -203,7 +203,7 @@
     {
       "id": "gallipoli",
       "number": "2570",
-      "hexCode": "",
+      "hexCode": "#ecc363",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -211,7 +211,7 @@
     {
       "id": "bo-kaap",
       "number": "2580",
-      "hexCode": "",
+      "hexCode": "#cf5d3c",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -219,7 +219,7 @@
     {
       "id": "oyo",
       "number": "2560",
-      "hexCode": "",
+      "hexCode": "#afa290",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -227,7 +227,7 @@
     {
       "id": "belleville",
       "number": "1005",
-      "hexCode": "",
+      "hexCode": "#bdbaaf",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -235,7 +235,7 @@
     {
       "id": "dakhla",
       "number": "2555",
-      "hexCode": "",
+      "hexCode": "#d6d0c4",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -243,7 +243,7 @@
     {
       "id": "ponticelli",
       "number": "1570",
-      "hexCode": "",
+      "hexCode": "#dfc9ae",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -251,7 +251,7 @@
     {
       "id": "rimini",
       "number": "0535",
-      "hexCode": "",
+      "hexCode": "#d7c4a5",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -259,7 +259,7 @@
     {
       "id": "niigata",
       "number": "0580",
-      "hexCode": "",
+      "hexCode": "#511a20",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -267,7 +267,7 @@
     {
       "id": "port-louis",
       "number": "2590",
-      "hexCode": "",
+      "hexCode": "#0a0c1b",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -275,7 +275,7 @@
     {
       "id": "khao-sok",
       "number": "2585",
-      "hexCode": "",
+      "hexCode": "#230f15",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -283,7 +283,7 @@
     {
       "id": "baden-baden",
       "number": "1080",
-      "hexCode": "",
+      "hexCode": "#232121",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -291,7 +291,7 @@
     {
       "id": "karlstad",
       "number": "1520",
-      "hexCode": "",
+      "hexCode": "#3a2c38",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -299,7 +299,7 @@
     {
       "id": "chebourg",
       "number": "0040",
-      "hexCode": "",
+      "hexCode": "#373c46",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -307,7 +307,7 @@
     {
       "id": "reign",
       "number": "0030",
-      "hexCode": "",
+      "hexCode": "#69727d",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -315,7 +315,7 @@
     {
       "id": "chefchaouen",
       "number": "0050",
-      "hexCode": "",
+      "hexCode": "#9caeab",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -323,7 +323,7 @@
     {
       "id": "oldbury",
       "number": "1070",
-      "hexCode": "",
+      "hexCode": "#444344",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -331,7 +331,7 @@
     {
       "id": "bampton",
       "number": "1065",
-      "hexCode": "",
+      "hexCode": "#656467",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -339,7 +339,7 @@
     {
       "id": "saint-malo",
       "number": "1015",
-      "hexCode": "",
+      "hexCode": "#807e7d",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -347,7 +347,7 @@
     {
       "id": "portland",
       "number": "1010",
-      "hexCode": "",
+      "hexCode": "#a9a8a3",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -355,7 +355,7 @@
     {
       "id": "nova",
       "number": "0510",
-      "hexCode": "",
+      "hexCode": "#7f8757",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -363,7 +363,7 @@
     {
       "id": "rosemont",
       "number": "0075",
-      "hexCode": "",
+      "hexCode": "#c6bc8a",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -371,7 +371,7 @@
     {
       "id": "barilius",
       "number": "0570",
-      "hexCode": "",
+      "hexCode": "#b19f9c",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
@@ -379,7 +379,7 @@
     {
       "id": "courchevel",
       "number": "1090",
-      "hexCode": "",
+      "hexCode": "#fafaf4",
       "color": "",
       "tone": "",
       "date": "2021-12-30"
