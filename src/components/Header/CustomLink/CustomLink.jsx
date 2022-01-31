@@ -5,7 +5,7 @@ export default function CustomLink({ children, className, to }) {
   const resolved = useResolvedPath(to);
   const match = useMatch({ path: resolved.pathname, end: true });
   return (
-    <Link className={`${className} ${match ? "active" : null}`} to={to}>
+    <Link className={`${className}${match ? " active" : ""}`} to={to}>
       {children}
     </Link>
   );
