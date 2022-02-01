@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import "./SampleItem.css";
 function SampleItem({ color }) {
   return (
     <li className="sample">
-      <a href={`samples/${color.id}`} className="sample-link">
+      <Link to={`/samples/${color.id}`} className="sample-link">
         <div
           className="sample-square"
           style={{ backgroundColor: color.hexCode }}
@@ -16,7 +17,7 @@ function SampleItem({ color }) {
           color.number
         }`}</div>
         <div className="sample-price">€3</div>
-      </a>
+      </Link>
     </li>
   );
 }

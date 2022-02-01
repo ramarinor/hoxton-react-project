@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import "./PaintItem.css";
 function PaintItem({ color }) {
   return (
     <li className="paint">
-      <a href={`paints/${color.id}`} className="paint-link">
+      <Link to={`/paints/${color.id}`} className="paint-link">
         <div
           className="paint-circle"
           style={{ backgroundColor: color.hexCode }}
@@ -16,7 +17,7 @@ function PaintItem({ color }) {
           color.number
         }`}</div>
         <div className="paint-price">€39/1L</div>
-      </a>
+      </Link>
     </li>
   );
 }

@@ -7,6 +7,7 @@ import Paints from "./pages/Paints";
 import Samples from "./pages/Samples";
 import PaintDetails from "./pages/PaintDetails";
 import NotFound from "./pages/NotFound";
+import SampleDetails from "./pages/SampleDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="paints" element={<Paints />} />
         <Route path="samples" element={<Samples />} />
         <Route path="paints/:id" element={<PaintDetails />} />
+        <Route path="samples/:id" element={<SampleDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
