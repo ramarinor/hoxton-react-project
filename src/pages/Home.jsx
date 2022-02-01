@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Background from "../components/Background/Background";
+import Mission from "../components/Mission/Mission";
 import PaintsList from "../components/PaintsList/PaintsList";
+import Partners from "../components/Partners/Partners";
 import Reasons from "../components/Reasons/Reasons";
+import SamplesSection from "../components/SamplesSection/SamplesSection";
 function Home() {
   const [colors, setColors] = useState([]);
   useEffect(() => {
@@ -35,6 +38,9 @@ function Home() {
           </div>
         </main>
       </section>
+      <Mission />
+      <SamplesSection />
+      <Partners />
     </main>
   );
 }
