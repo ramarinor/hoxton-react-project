@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Background from "../components/Background/Background";
 import Mission from "../components/Mission/Mission";
+import Newsletter from "../components/Newsletter/Newsletter";
 import PaintsList from "../components/PaintsList/PaintsList";
 import Partners from "../components/Partners/Partners";
 import Reasons from "../components/Reasons/Reasons";
@@ -41,6 +42,7 @@ function Home() {
       <Mission />
       <SamplesSection />
       <Partners />
+      <Newsletter />
     </main>
   );
 }
