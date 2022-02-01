@@ -3,7 +3,7 @@ import "./SamplesSection.css";
 
 function SamplesSection() {
   return (
-    <section className="samples">
+    <section className="samples-section">
       <div className="samples-headline">
         <h4 className="samples-headline-content">
           Try our sticker samples before making up your mind!
