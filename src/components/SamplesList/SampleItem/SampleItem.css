@@ -4,6 +4,7 @@
   text-align: center;
 }
 .sample .sample-square {
+  position: relative;
   aspect-ratio: 1/1;
 }
 .sample .sample-info {
@@ -12,6 +13,8 @@
 }
 
 .sample .sample-square img {
+  position: absolute;
+  right: 0;
   opacity: 0%;
   transition: opacity 0.5s;
 }
