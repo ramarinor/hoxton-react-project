@@ -17,7 +17,7 @@ function App() {
   const [modalMessage, setModalMessage] = useState(null);
   return (
     <div className="App">
-      <Header />
+      <Header user={user} setUser={setUser} />
       <Routes>
         <Route index element={<Home />} />
         <Route path="paints" element={<Paints />} />

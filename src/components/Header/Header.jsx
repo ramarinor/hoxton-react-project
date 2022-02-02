@@ -1,6 +1,6 @@
 import CustomLink from "./CustomLink/CustomLink";
 import "./Header.css";
-function Header() {
+function Header({ user, setUser }) {
   return (
     <header className="header">
       <nav className="nav-bar">
@@ -28,16 +28,32 @@ function Header() {
               CALCULATOR
             </CustomLink>
           </li>
-          <li className="nav-bar-item">
-            <CustomLink to="/login" className="nav-bar-link">
-              LOG IN
-            </CustomLink>
-          </li>
-          <li className="nav-bar-item">
-            <CustomLink to="/cart" className="nav-bar-link">
-              CART (0)
-            </CustomLink>
-          </li>
+          {user === null ? (
+            <li className="nav-bar-item">
+              <CustomLink to="/login" className="nav-bar-link">
+                LOG IN
+              </CustomLink>
+            </li>
+          ) : (
+            <li className="nav-bar-item">
+              <CustomLink
+                to="/login"
+                className="nav-bar-link"
+                onClick={() => {
+                  setUser(null);
+                }}
+              >
+                LOG OUT
+              </CustomLink>
+            </li>
+          )}
+          {user !== null && (
+            <li className="nav-bar-item">
+              <CustomLink to="/cart" className="nav-bar-link">
+                CART (0)
+              </CustomLink>
+            </li>
+          )}
         </ul>
       </nav>
     </header>

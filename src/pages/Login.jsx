@@ -5,7 +5,7 @@ function Login({ setUser, setModalMessage }) {
   return (
     <main className="login">
       <SignUp setUser={setUser} setModalMessage={setModalMessage} />
-      <SignIn setUser={setUser} />
+      <SignIn setUser={setUser} setModalMessage={setModalMessage} />
     </main>
   );
 }

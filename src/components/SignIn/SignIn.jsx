@@ -1,10 +1,31 @@
 import "./SignIn.css";
 import { TextField, Button } from "@mui/material";
-function SignIn({setUser}) {
+import { useNavigate } from "react-router-dom";
+function SignIn({ setUser, setModalMessage }) {
+  const navigate = useNavigate();
+  function signIn(username, password) {
+    fetch(`http://localhost:3000/users/${username}`)
+      .then((resp) => resp.json())
+      .then((user) => {
+        if (user.password === password) {
+          navigate("/");
+          setUser(user);
+          setModalMessage("Welcome");
+        } else {
+          setModalMessage("Wrong username/password. Please try again.");
+        }
+      });
+  }
   return (
     <div className="sign-in">
       <h2>Sign In</h2>
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          const formEl = e.target;
+          signIn(formEl.email.value, formEl.password.value);
+        }}
+      >
         <TextField
           name="email"
           type="email"
