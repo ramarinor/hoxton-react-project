@@ -1,7 +1,9 @@
 import "./SignUp.css";
 import { TextField, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
-function SignUp({ setUser }) {
+function SignUp({ setUser, setModalMessage }) {
+  const navigate = useNavigate();
   function createNewUserOnServer(user) {
     fetch("http://localhost:3000/users/", {
       method: "POST",
@@ -25,10 +27,12 @@ function SignUp({ setUser }) {
     formEl.reset();
     fetch(`http://localhost:3000/users/${user.id}`).then((resp) => {
       if (!resp.ok) {
-        console.log("welcome");
+        navigate("/");
+        setModalMessage("welcome");
+        setUser(user);
         createNewUserOnServer(user);
       } else {
-        console.log("this user already exists");
+        setModalMessage("This email already exists");
       }
     });
   }
