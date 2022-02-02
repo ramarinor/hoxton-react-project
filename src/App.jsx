@@ -22,8 +22,26 @@ function App() {
         <Route index element={<Home />} />
         <Route path="paints" element={<Paints />} />
         <Route path="samples" element={<Samples />} />
-        <Route path="paints/:id" element={<PaintDetails />} />
-        <Route path="samples/:id" element={<SampleDetails />} />
+        <Route
+          path="paints/:id"
+          element={
+            <PaintDetails
+              user={user}
+              setUser={setUser}
+              setModalMessage={setModalMessage}
+            />
+          }
+        />
+        <Route
+          path="samples/:id"
+          element={
+            <SampleDetails
+              user={user}
+              setUser={setUser}
+              setModalMessage={setModalMessage}
+            />
+          }
+        />
         <Route
           path="login"
           element={

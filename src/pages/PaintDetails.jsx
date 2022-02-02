@@ -1,7 +1,40 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Details.css";
-function PaintDetails() {
+function PaintDetails({ user, setUser, setModalMessage }) {
+  function addToCart(productId) {
+    if (user === null) {
+      setModalMessage("Please log in to be able to add items to cart");
+    } else {
+      const updatedUser = JSON.parse(JSON.stringify(user));
+      const cartItemFound = updatedUser.cart.find(
+        (cartItem) => cartItem.id === productId && cartItem.type === "paint"
+      );
+      if (cartItemFound) {
+        cartItemFound.quantity++;
+      } else {
+        const newCartItem = {
+          id: productId,
+          type: "paint",
+          price: 39,
+          quantity: 1
+        };
+        updatedUser.cart.push(newCartItem);
+      }
+      setUser(updatedUser);
+      fetch(`http://localhost:3000/users/${user.id}`, {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        },
+        method: "PATCH",
+        body: JSON.stringify({
+          cart: updatedUser.cart
+        })
+      });
+    }
+  }
+
   const params = useParams();
   const [color, setColor] = useState(null);
   useEffect(() => {
@@ -33,7 +66,9 @@ function PaintDetails() {
             pigmentation, quick drying and superior coverage.
           </p>
         </div>
-        <button className="cta">Add to cart</button>
+        <button className="cta" onClick={() => addToCart(params.id)}>
+          Add to cart
+        </button>
       </div>
       <div className="image">
         <img src={`../../assets/paints/${color.id}.png`} alt={color.id} />

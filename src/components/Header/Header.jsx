@@ -50,7 +50,12 @@ function Header({ user, setUser }) {
           {user !== null && (
             <li className="nav-bar-item">
               <CustomLink to="/cart" className="nav-bar-link">
-                CART (0)
+                CART (
+                {user.cart.reduce(
+                  (total, cartItem) => total + cartItem.quantity,
+                  0
+                )}
+                )
               </CustomLink>
             </li>
           )}
