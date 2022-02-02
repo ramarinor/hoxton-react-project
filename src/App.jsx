@@ -8,6 +8,7 @@ import Samples from "./pages/Samples";
 import PaintDetails from "./pages/PaintDetails";
 import NotFound from "./pages/NotFound";
 import SampleDetails from "./pages/SampleDetails";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="samples" element={<Samples />} />
         <Route path="paints/:id" element={<PaintDetails />} />
         <Route path="samples/:id" element={<SampleDetails />} />
+        <Route path="login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

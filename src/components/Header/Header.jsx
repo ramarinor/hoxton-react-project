@@ -29,7 +29,7 @@ function Header() {
             </CustomLink>
           </li>
           <li className="nav-bar-item">
-            <CustomLink to="/Login" className="nav-bar-link">
+            <CustomLink to="/login" className="nav-bar-link">
               LOG IN
             </CustomLink>
           </li>
