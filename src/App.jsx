@@ -9,8 +9,10 @@ import PaintDetails from "./pages/PaintDetails";
 import NotFound from "./pages/NotFound";
 import SampleDetails from "./pages/SampleDetails";
 import Login from "./pages/Login";
+import { useState } from "react";
 
 function App() {
+  const [user, setUser] = useState(null);
   return (
     <div className="App">
       <Header />
@@ -20,7 +22,7 @@ function App() {
         <Route path="samples" element={<Samples />} />
         <Route path="paints/:id" element={<PaintDetails />} />
         <Route path="samples/:id" element={<SampleDetails />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login setUser={setUser} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

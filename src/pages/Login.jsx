@@ -1,11 +1,11 @@
 import SignIn from "../components/SignIn/SignIn";
 import SignUp from "../components/SignUp/SignUp";
 
-function Login() {
+function Login({ setUser }) {
   return (
     <main className="login">
-      <SignUp />
-      <SignIn />
+      <SignUp setUser={setUser} />
+      <SignIn setUser={setUser} />
     </main>
   );
 }

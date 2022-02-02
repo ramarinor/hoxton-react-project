@@ -1,11 +1,40 @@
 import "./SignUp.css";
 import { TextField, Button } from "@mui/material";
 
-function SignUp() {
+function SignUp({ setUser }) {
+  function createNewUserOnServer(user) {
+    fetch("http://localhost:3000/users/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(user)
+    });
+  }
+  function signUp(e) {
+    e.preventDefault();
+    const formEl = e.target;
+    const user = {
+      id: formEl.email.value,
+      password: formEl.password.value,
+      firstName: formEl.firstName.value,
+      lastName: formEl.lastName.value,
+      address: formEl.address.value
+    };
+    formEl.reset();
+    fetch(`http://localhost:3000/users/${user.id}`).then((resp) => {
+      if (!resp.ok) {
+        console.log("welcome");
+        createNewUserOnServer(user);
+      } else {
+        console.log("this user already exists");
+      }
+    });
+  }
   return (
     <div className="sign-up">
       <h2>Sign Up</h2>
-      <form>
+      <form onSubmit={signUp}>
         <TextField
           name="firstName"
           type="text"
@@ -38,13 +67,6 @@ function SignUp() {
           name="password"
           type="password"
           label="PASSWORD"
-          variant="outlined"
-          required
-        />
-        <TextField
-          name="confrim"
-          type="password"
-          label="CONFRIM PASSWORD"
           variant="outlined"
           required
         />

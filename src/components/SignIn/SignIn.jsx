@@ -1,6 +1,6 @@
 import "./SignIn.css";
 import { TextField, Button } from "@mui/material";
-function SignIn() {
+function SignIn({setUser}) {
   return (
     <div className="sign-in">
       <h2>Sign In</h2>
