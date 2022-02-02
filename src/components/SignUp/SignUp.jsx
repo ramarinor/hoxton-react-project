@@ -19,7 +19,8 @@ function SignUp({ setUser }) {
       password: formEl.password.value,
       firstName: formEl.firstName.value,
       lastName: formEl.lastName.value,
-      address: formEl.address.value
+      address: formEl.address.value,
+      cart: []
     };
     formEl.reset();
     fetch(`http://localhost:3000/users/${user.id}`).then((resp) => {

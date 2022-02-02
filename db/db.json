@@ -391,7 +391,8 @@
       "password": "123456",
       "firstName": "Rinor",
       "lastName": "Rama",
-      "address": "Mensur Zyberaj"
+      "address": "Mensur Zyberaj",
+      "cart": []
     }
   ]
 }
