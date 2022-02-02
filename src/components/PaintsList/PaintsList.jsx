@@ -5,7 +5,7 @@ function PaintsList({ colors }) {
   return (
     <ul className="paints-list">
       {colors.map((color) => (
-        <PaintItem color={color} />
+        <PaintItem color={color} key={color.id} />
       ))}
     </ul>
   );

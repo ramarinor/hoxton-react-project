@@ -5,7 +5,7 @@ function SamplesList({ colors }) {
   return (
     <ul className="samples-list">
       {colors.map((color) => (
-        <SampleItem color={color} />
+        <SampleItem color={color} key={color.id} />
       ))}
     </ul>
   );
