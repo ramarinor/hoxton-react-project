@@ -58,3 +58,9 @@ a {
   overflow-y: auto;
   scrollbar-width: thin;
 }
+
+.filters {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+}

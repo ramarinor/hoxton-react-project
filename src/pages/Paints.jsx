@@ -4,15 +4,22 @@ import Background from "../components/Background/Background";
 import ColorSelect from "../components/ColorSelect/ColorSelect";
 import PaintsList from "../components/PaintsList/PaintsList";
 import Reasons from "../components/Reasons/Reasons";
+import ToneSelect from "../components/ToneSelect/ToneSelect";
 
 function Paints() {
   const [colors, setColors] = useState([]);
   const [selectedColors, setSelectedColors] = useState([]);
+  const [selectedTones, setSelectedTones] = useState([]);
   function getColorsToDisplay() {
     let colorsToDisplay = colors;
     if (selectedColors.length !== 0) {
       colorsToDisplay = colorsToDisplay.filter((color) =>
         selectedColors.includes(color.color)
+      );
+    }
+    if (selectedTones.length !== 0) {
+      colorsToDisplay = colorsToDisplay.filter((color) =>
+        selectedTones.includes(color.tone)
       );
     }
     return colorsToDisplay;
@@ -36,6 +43,10 @@ function Paints() {
           <ColorSelect
             selectedColors={selectedColors}
             setSelectedColors={setSelectedColors}
+          />
+          <ToneSelect
+            selectedTones={selectedTones}
+            setSelectedTones={setSelectedTones}
           />
         </div>
         <main className="paints-content">
