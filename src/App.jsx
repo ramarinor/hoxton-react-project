@@ -49,7 +49,7 @@ function App() {
             <Login setUser={setUser} setModalMessage={setModalMessage} />
           }
         />
-        <Route path="cart" element={<Cart user={user} />} />
+        <Route path="cart" element={<Cart user={user} setUser={setUser} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

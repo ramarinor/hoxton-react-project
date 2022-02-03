@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import CartItem from "../components/CartItem/CartItem";
 
-function Cart({ user }) {
+function Cart({ user, setUser }) {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -14,8 +14,13 @@ function Cart({ user }) {
       <section className="cart-container">
         <h2>Your Cart </h2>
         <ul>
-          {user.cart.map((cartItem) => (
-            <CartItem cartItem={cartItem} />
+          {user.cart.map((cartItem, index) => (
+            <CartItem
+              key={index}
+              cartItem={cartItem}
+              user={user}
+              setUser={setUser}
+            />
           ))}
         </ul>
         <h3>

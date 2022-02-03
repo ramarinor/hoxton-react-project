@@ -394,19 +394,13 @@
       "address": "Mensur Zyberaj",
       "cart": [
         {
-          "id": "pantanal",
-          "type": "paint",
-          "price": 39,
-          "quantity": 14
-        },
-        {
-          "id": "glenveagh",
-          "type": "paint",
-          "price": 39,
-          "quantity": 5
-        },
-        {
           "id": "hazel",
+          "type": "paint",
+          "price": 39,
+          "quantity": 2
+        },
+        {
+          "id": "st-mary",
           "type": "paint",
           "price": 39,
           "quantity": 1
@@ -415,19 +409,13 @@
           "id": "glenveagh",
           "type": "sample",
           "price": 3,
-          "quantity": 3
+          "quantity": 1
         },
         {
-          "id": "kobe",
+          "id": "hazel",
           "type": "sample",
           "price": 3,
-          "quantity": 4
-        },
-        {
-          "id": "kigali",
-          "type": "sample",
-          "price": 3,
-          "quantity": 3
+          "quantity": 1
         }
       ]
     }

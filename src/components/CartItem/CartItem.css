@@ -31,3 +31,6 @@
 .cta.cart-button {
   padding: 0.25rem 0.5rem;
 }
+.cart-container__item > img {
+  border-radius: 1rem;
+}
