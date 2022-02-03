@@ -1,10 +1,21 @@
 import { useEffect, useState } from "react";
 import Background from "../components/Background/Background";
+import ColorSelect from "../components/ColorSelect/ColorSelect";
 import Reasons from "../components/Reasons/Reasons";
 import SamplesList from "../components/SamplesList/SamplesList";
 
 function Samples() {
   const [colors, setColors] = useState([]);
+  const [selectedColors, setSelectedColors] = useState([]);
+  function getColorsToDisplay() {
+    let colorsToDisplay = colors;
+    if (selectedColors.length !== 0) {
+      colorsToDisplay = colorsToDisplay.filter((color) =>
+        selectedColors.includes(color.color)
+      );
+    }
+    return colorsToDisplay;
+  }
   useEffect(() => {
     fetch("http://localhost:3000/colors")
       .then((resp) => resp.json())
@@ -22,8 +33,14 @@ function Samples() {
         <Reasons style={{ color: "white" }} />
       </Background>
       <section className="samples">
+        <div className="filters">
+          <ColorSelect
+            selectedColors={selectedColors}
+            setSelectedColors={setSelectedColors}
+          />
+        </div>
         <main className="samples-content">
-          <SamplesList colors={colors} />
+          <SamplesList colors={getColorsToDisplay()} />
         </main>
       </section>
     </main>
