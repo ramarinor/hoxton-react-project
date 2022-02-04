@@ -84,7 +84,7 @@ function Calculator({ setModalMessage }) {
           </label>
           <label>
             and <input type="number" name="windows" defaultValue={0} min={0} />
-            windors.
+            windows.
           </label>
         </div>
         <button className="cta">Calculate</button>
