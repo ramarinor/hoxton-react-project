@@ -12,6 +12,7 @@ import Login from "./pages/Login";
 import { useState } from "react";
 import Modal from "./components/Modal/Modal";
 import Cart from "./pages/Cart";
+import Calculator from "./pages/Calculator";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -50,6 +51,11 @@ function App() {
           }
         />
         <Route path="cart" element={<Cart user={user} setUser={setUser} />} />
+        <Route
+          path="calculator"
+          element={<Calculator setModalMessage={setModalMessage} />}
+        />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
